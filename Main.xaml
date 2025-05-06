@@ -81,38 +81,34 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="912.0000000000001,1249.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1289,1242" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Double" Name="DepositAmount" />
       <Variable x:TypeArguments="x:Double" Name="FinalEarning" />
-      <Variable x:TypeArguments="x:Int32" Name="DepositPeriod">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" Value="1" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:Int32" Default="1" Name="DepositPeriod" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="449.6,858.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap:VirtualizedContainerService.HintSize="450,851" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="416,273.6" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Deposit Amount" Title="Deposit Amount">
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="416,271" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Deposit Amount ($)" Title="Deposit Amount in dollars ">
         <ui:InputDialog.Result>
           <OutArgument x:TypeArguments="x:Double">[DepositAmount]</OutArgument>
         </ui:InputDialog.Result>
       </ui:InputDialog>
-      <ui:InputDialog OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="416,327.2" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="Pick the time period" Options="[{&quot;1&quot;, &quot;3&quot;, &quot;5&quot;}]" Title="Select time period">
+      <ui:InputDialog OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="416,324" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="Pick the time period" Options="[{&quot;1&quot;, &quot;3&quot;, &quot;5&quot;}]" Title="Select time period">
         <ui:InputDialog.Result>
           <OutArgument x:TypeArguments="x:Int32">[DepositPeriod]</OutArgument>
         </ui:InputDialog.Result>
       </ui:InputDialog>
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Deposit amount is &quot;+ DepositAmount.ToString + &quot;$&quot; + &quot; for a period of &quot; + DepositPeriod.ToString + &quot; years.&quot;]" />
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,164" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Deposit amount is &quot;+ DepositAmount.ToString + &quot;$&quot; + &quot; for a period of &quot; + DepositPeriod.ToString + &quot; years.&quot;]" />
     </Sequence>
     <Sequence DisplayName="Sequence interest calc" sap:VirtualizedContainerService.HintSize="449.6,259.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <sap:WorkflowViewStateService.ViewState>
