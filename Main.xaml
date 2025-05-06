@@ -103,7 +103,7 @@
           <OutArgument x:TypeArguments="x:Double">[DepositAmount]</OutArgument>
         </ui:InputDialog.Result>
       </ui:InputDialog>
-      <ui:InputDialog OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="416,324" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="Pick the time period" Options="[{&quot;1&quot;, &quot;3&quot;, &quot;5&quot;}]" Title="Select time period">
+      <ui:InputDialog OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="416,324" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="Pick the time period (years)" Options="[{&quot;1&quot;, &quot;3&quot;, &quot;5&quot;}]" Title="Select time period in Years ">
         <ui:InputDialog.Result>
           <OutArgument x:TypeArguments="x:Int32">[DepositPeriod]</OutArgument>
         </ui:InputDialog.Result>
