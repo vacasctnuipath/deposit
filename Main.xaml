@@ -81,7 +81,7 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1289,1242" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1289,1243" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Double" Name="DepositAmount" />
       <Variable x:TypeArguments="x:Double" Name="FinalEarning" />
@@ -108,15 +108,15 @@
           <OutArgument x:TypeArguments="x:Int32">[DepositPeriod]</OutArgument>
         </ui:InputDialog.Result>
       </ui:InputDialog>
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,164" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Deposit amount is &quot;+ DepositAmount.ToString + &quot;$&quot; + &quot; for a period of &quot; + DepositPeriod.ToString + &quot; years.&quot;]" />
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,164" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Deposit amount is &quot;+ DepositAmount.ToString + &quot;$&quot; + &quot; for a period of &quot; + DepositPeriod.ToString + &quot; years...&quot;]" />
     </Sequence>
-    <Sequence DisplayName="Sequence interest calc" sap:VirtualizedContainerService.HintSize="449.6,259.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence DisplayName="Sequence interest calc" sap:VirtualizedContainerService.HintSize="450,260" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="SimpleInterestCalculator - Invoke Workflow File (SimpleInterestCalculator.xaml)" sap:VirtualizedContainerService.HintSize="416,167.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="SimpleInterestCalculator.xaml">
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="SimpleInterestCalculator - Invoke Workflow File (SimpleInterestCalculator.xaml)" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="SimpleInterestCalculator.xaml">
         <ui:InvokeWorkflowFile.Arguments>
           <InArgument x:TypeArguments="x:Double" x:Key="in_DepositAmount">[DepositAmount]</InArgument>
           <OutArgument x:TypeArguments="x:Double" x:Key="out_FinalEarning">[FinalEarning]</OutArgument>
