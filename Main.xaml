@@ -98,7 +98,7 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="416,271" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Deposit Amount ($)" Title="Deposit Amount in dollars ">
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="416,271" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Deposit Amountddd ($)" Title="Deposit Amount in dollars ">
         <ui:InputDialog.Result>
           <OutArgument x:TypeArguments="x:Double">[DepositAmount]</OutArgument>
         </ui:InputDialog.Result>
